@@ -1,0 +1,144 @@
+/* Overall styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eba0a0;
+}
+
+/* Navbar */
+nav {
+  background-color: #191a1a;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.nav-bar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.nav-bar li a:hover {
+  text-decoration: underline;
+}
+
+/* Slogan */
+.slogan {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff3cd;
+  border-radius: 10px;
+  margin: 0 20px 20px;
+}
+
+.slogan h1 {
+  margin: 0;
+  color: #333;
+}
+
+.slogan p {
+  font-style: italic;
+  color: #555;
+  margin-top: 8px;
+}
+
+/* Layout Containers */
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.first {
+  flex: 1;
+  max-width: 400px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Elements */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+.categories {
+  margin-bottom: 10px;
+}
+
+.categories label {
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+button {
+  padding: 6px 12px;
+  background-color: #191a1a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Guest List Styling */
+ul#Guests {
+  list-style: none;
+  padding: 0;
+}
+
+ul#Guests li {
+  background-color: #e9f1ff;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.guest-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.guest-meta {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* Category Color Tags */
+.friend {
+  color: green;
+}
+
+.family {
+  color: blue;
+}
+
+.colleague {
+  color: orange;
+}
