@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Guest List Manager</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul class="nav-bar">
+      <li><a href="#">Home</a></li>
+      <li><a href="#form-section">Add Guest</a></li>
+      <li><a href="#guest-section">Guest List</a></li>
+    </ul>
+  </nav>
+
+  <!-- Slogan -->
+  <div class="slogan">
+    <h1>🎉 Welcome to the Party Planner</h1>
+    <p>Because every guest counts and every RSVP matters!</p>
+  </div>
+
+  <!-- Form & Guest List Sections -->
+  <div class="container" id="form-section">
+    <div class="first">
+      <h2>Add a Guest</h2>
+      <form id="formy">
+        <input type="text" id="Names" placeholder="Enter Guest Name" required />
+
+        <!-- Category Checkboxes -->
+        <div class="categories">
+          <label><input type="checkbox" name="category" value="friend"> Friend</label>
+          <label><input type="checkbox" name="category" value="family"> Family</label>
+          <label><input type="checkbox" name="category" value="colleague"> Colleague</label>
+        </div>
+
+        <button type="submit">Add Person</button>
+      </form>
+    </div>
+
+    <div class="first" id="guest-section">
+      <h2>Recorded Guests</h2>
+      <ul id="Guests"></ul>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
